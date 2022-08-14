@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <div id="info">
+      <form
+        id="form"
+        action="success.html"
+        target="_self"
+        onsubmit="return(submitForm())"
+      >
+        <label for="fname">First Name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First Name"
+          class="user-form"
+        /><br />
+        <label for="lname">Last Name:</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Last Name"
+          class="user-form"
+        /><br />
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          class="user-form"
+        /><br />
+        <label for="email">Email:</label><br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email"
+          class="user-form"
+        /><br />
+        <label for="phone">Phone:</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone-Number"
+          class="user-form"
+        /><br />
+        <label for="country">Country:</label><br />
+        <select id="country" name="country" class="user-form">
+          <br />
+          <option value="">--Select--</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Japan">Japan</option>
+          <option value="USA">USA</option>
+          <option value="Singapore">Singapore</option></select
+        ><br />
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
